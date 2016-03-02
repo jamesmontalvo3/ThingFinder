@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="IMS3" Class="IMSDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=INSERT-DB-SERVER;Initial Catalog=IMS3;Persist Security Info=True;User ID=INSERT-DB-USER" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="IMS3ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ITEMTREE" Member="ITEMTREEs">
+    <Type Name="ITEMTREE">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID_PARENT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PART_NUMBER" Type="System.String" DbType="VarChar(32) NOT NULL" CanBeNull="false" />
+      <Column Name="S_N" Type="System.String" DbType="VarChar(32) NOT NULL" CanBeNull="false" />
+      <Column Name="CAGE" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="ACRONYM" Type="System.String" DbType="VarChar(56)" CanBeNull="true" />
+      <Column Name="R_OPS" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="E_OPS" Type="System.String" DbType="VarChar(56)" CanBeNull="true" />
+      <Column Name="BARCODE" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="LABEL" Type="System.String" DbType="VarChar(46)" CanBeNull="true" />
+      <Column Name="LOCATION_CODE" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="QPU" Type="System.Decimal" DbType="Decimal(5,0)" CanBeNull="true" />
+      <Column Name="WIDTH" Type="System.Decimal" DbType="Decimal(17,5)" CanBeNull="true" />
+      <Column Name="HEIGHT" Type="System.Decimal" DbType="Decimal(17,5)" CanBeNull="true" />
+      <Column Name="LENGTH" Type="System.Decimal" DbType="Decimal(17,5)" CanBeNull="true" />
+      <Column Name="VOLUME" Type="System.Decimal" DbType="Decimal(17,5)" CanBeNull="true" />
+      <Column Name="DIAMETER" Type="System.Decimal" DbType="Decimal(17,5)" CanBeNull="true" />
+      <Column Name="WEIGHT" Type="System.Decimal" DbType="Decimal(17,5)" CanBeNull="true" />
+      <Column Name="EXPIRE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ITEM_SCHEMA" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="NOMER" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LAUNCH" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="VarChar(1024)" CanBeNull="true" />
+      <Column Name="TYPE" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="HAZARD" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="STATE" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="STATUS" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="CONTAINER" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="MOVEABLE" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="BACKGROUND" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="ICON" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="SHOW_ICON" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IMAGE_X" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IMAGE_Y" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IMAGE_W" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IMAGE_H" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SYSTEM" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SUBSYSTEM" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="HOMELOCATION" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="INUSENAME" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ACT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MOVE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LOCATION_PART" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="AUDIT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUDIT_STATUS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AUDIT_LOCATION" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="FILL_STATUS" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EMPTY_SPACE" Type="System.Decimal" DbType="Decimal(17,5)" CanBeNull="true" />
+      <Column Name="DISPOSE" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="AUDIT_DBNAME" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="AUDIT_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AUDIT_COMMENT" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RFID_TAG_PRESENT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="ITEMTREE_ITEMTREE" Member="ITEMTREEs" ThisKey="ID" OtherKey="ID_PARENT" Type="ITEMTREE" />
+      <Association Name="ITEMTREE_ITEMTREE" Member="ITEMTREE1" ThisKey="ID_PARENT" OtherKey="ID" Type="ITEMTREE" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

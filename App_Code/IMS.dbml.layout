@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 14.75" name="IMS">
+  <DataContextMoniker Name="/IMSDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2ee55101-f265-48cf-bb72-b48ac21d7f2a" absoluteBounds="5.25, 2.75, 2, 11.1936669921875">
+      <DataClassMoniker Name="/IMSDataContext/ITEMTREE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a15afffa-a4fc-49e1-b3c4-8da9431ac0f1" absoluteBounds="5.265, 3.21, 1.9700000000000002, 10.6336669921875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.95923076923077 : 13.9436669921875); (5.95923076923077 : 14.1936669921875); (6.55461538461539 : 14.1936669921875); (6.55461538461539 : 13.9436669921875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/IMSDataContext/ITEMTREE/ITEMTREE_ITEMTREE" />
+      <nodes>
+        <classShapeMoniker Id="2ee55101-f265-48cf-bb72-b48ac21d7f2a" />
+        <classShapeMoniker Id="2ee55101-f265-48cf-bb72-b48ac21d7f2a" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
